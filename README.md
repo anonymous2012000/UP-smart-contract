@@ -1,4 +1,4 @@
-# Implementation of Unforgeable Polynomials on Smart Contract
+# Implementation of Unforgeable Polynomials on Ethereum Smart Contract
 
 
 This contract provides efficient modular arithmetic and flexible verification of degree-3 polynomial tags over a large prime field. It is designed for scenarios where you need to check polynomial relationships and divisibility on-chain, e.g., for cryptographic protocols, verifiable computation, or privacy-preserving applications.
