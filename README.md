@@ -6,7 +6,8 @@ This contract provides efficient modular arithmetic and flexible verification of
 
 ## How to Use on Remix
 
-1. Deploying the Contract
+1. Deploying the Contract:
+   
    1.1. Open Remix IDE.
    
    1.2. Create a new file (e.g., FlexibleTagVerifier.sol) and paste the contract code.
@@ -23,3 +24,13 @@ This contract provides efficient modular arithmetic and flexible verification of
 The core public function for testing is `verifyDegree3`. This function verifies that the sum of a set of degree-3 polynomials, minus an aggregate polynomial, is divisible by a degree-1 polynomial (zeta). This is useful for protocols where correctness of polynomial relations must be checked efficiently on-chain.
 
 
+### Test Example in Remix
+
+Suppose you want to test the following:
+
+* You have two degree-3 tags:
+   * Tag1: [1, 2, 3, 4]
+   * Tag2: [5, 6, 7, 8]
+* Their sum is [6, 8, 10, 12]
+* Let’s set `gammaSum' to [1, 1, 1, 1]
+* Choose zeta (a degree-1 polynomial) as [2, 3] (which is 2 + 3x, and 3 ≠ 0)
