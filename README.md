@@ -10,7 +10,7 @@ This contract provides efficient modular arithmetic and flexible verification of
    
    1.1. Open [Remix IDE](https://remix.ethereum.org/).
    
-   1.2. Create a new file (e.g., FlexibleTagVerifier.sol) and paste the contract code.
+   1.2. Create a new file (e.g., FlexibleTagVerifier.sol) and paste the [contract code](https://github.com/anonymous2012000/UP-smart-contract/blob/main/smart-contract-arbitrary-poly.sol).
    
    1.3. Select the correct Solidity compiler version (e.g., 0.8.20 or higher).
    
