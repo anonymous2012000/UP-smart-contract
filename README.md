@@ -21,7 +21,7 @@ This contract provides efficient modular arithmetic and flexible verification of
 
 ## Testing the Contract
 
-The core public function for testing is `verifyDegree3`. This function verifies that the sum of a set of degree-3 polynomials, minus an aggregate polynomial, is divisible by a degree-1 polynomial (zeta). This is useful for protocols where correctness of polynomial relations must be checked efficiently on-chain.
+The core public function for testing is `verifyDegree3`. This function verifies that the sum of a set of degree-3 polynomials, minus an aggregate polynomial (`gammaSum`), is divisible by a degree-1 polynomial (zeta). This is useful for protocols where correctness of polynomial relations must be checked efficiently on-chain.
 
 
 ### Test Example in Remix
@@ -32,5 +32,15 @@ Suppose you want to test the following:
    * Tag1: [1, 2, 3, 4]
    * Tag2: [5, 6, 7, 8]
 * Their sum is [6, 8, 10, 12]
-* Let’s set `gammaSum' to [1, 1, 1, 1]
-* Choose zeta (a degree-1 polynomial) as [2, 3] (which is 2 + 3x, and 3 ≠ 0)
+* Let’s set `gammaSum` to [1, 1, 1, 1]
+* Choose `zeta` (a degree-1 polynomial) as [2, 3] (which is 2 + 3x)
+  
+You want to check if (Tag1 + Tag2 - gammaSum) is divisible by zeta.
+
+#### How to call in Remix:
+
+1. After deploying, find the `verifyDegree3` function in Remix’s interface.
+2. For this test, input the following (using array notation):
+   * tags: [[1, 2, 3, 4],[5, 6, 7, 8]]
+   * gammaSum: [1, 1, 1, 1]
+   * zeta: [2, 3]
