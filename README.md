@@ -8,7 +8,7 @@ This contract provides efficient modular arithmetic and flexible verification of
 
 1. Deploying the Contract:
    
-   1.1. Open Remix IDE.
+   1.1. Open [Remix IDE](https://remix.ethereum.org/).
    
    1.2. Create a new file (e.g., FlexibleTagVerifier.sol) and paste the contract code.
    
